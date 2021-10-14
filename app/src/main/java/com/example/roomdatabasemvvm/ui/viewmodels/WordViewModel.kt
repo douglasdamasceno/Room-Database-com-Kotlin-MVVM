@@ -6,6 +6,7 @@ import com.example.roomdatabasemvvm.repository.WordRepository
 import kotlinx.coroutines.launch
 
 
+
 class WordViewModel(private val repository: WordRepository) : ViewModel() {
 
     val allWords: LiveData<List<Word>> = repository.allWords.asLiveData()

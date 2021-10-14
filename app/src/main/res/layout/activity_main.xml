@@ -9,7 +9,6 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
         tools:listitem="@layout/recycler_item"
-        tools:itemCount="5"
         android:padding="8dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
