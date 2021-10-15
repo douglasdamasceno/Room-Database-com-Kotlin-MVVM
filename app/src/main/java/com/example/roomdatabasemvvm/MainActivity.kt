@@ -33,10 +33,12 @@ class MainActivity : AppCompatActivity() {
         this.binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(this.binding.root)
 
-        this.recyclerView = this.binding.recyclerView
+
         this.adapter = WordListAdapter()
-        this.recyclerView.adapter = this.adapter
-        this.recyclerView.layoutManager = LinearLayoutManager(this)
+        this.recyclerView = this.binding.recyclerView
+       this.recyclerView.adapter = this.adapter
+       this.recyclerView.layoutManager = LinearLayoutManager(this)
+
 
         val resultLauncher = registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
             if (result.resultCode == Activity.RESULT_OK) {
